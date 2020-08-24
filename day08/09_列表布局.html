@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表布局</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		a{
+			text-decoration: none;
+			color: #333;
+		}
+		.list{
+			list-style: none;
+			width: 600px;
+			border: 1px solid red;
+			margin: 30px;
+			font-size: 14px;
+		}
+
+		.list li{
+			border: 1px solid blue;
+			overflow: hidden;
+			line-height: 30px;
+		}
+
+		.list li span{
+			width: 22px;
+			height: 20px;
+			line-height: 20px;
+			background: grey;
+			float: left;
+			color: white;
+			text-align: center;
+			margin-right: 15px;
+			margin-top: 5px;
+		}
+
+		.list li font{
+			float: right;
+			font-size: 12px;
+			color: grey;
+		}
+
+		.list li .green{
+			background: green;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>
+			<span>1</span>
+			<a href="">八个视角 读懂总书记陕西之行</a>
+			<font>2020/04/26</font>
+		</li>
+
+		<li>
+			<span>2</span>
+			<a href="">31个省区市新增确诊11例：境外输入5例</a>
+			<font>2020/04/26</font>
+		</li>
+		<li>
+			<span class="green">3</span>
+			<a href="">1个月内为何2次发文监管防疫物资出口？商务部回应</a>
+			<font>2020/04/26</font>
+		</li>
+		<li>
+			<span class="green">4</span>
+			<a href="">金正恩向支援三池渊建设的人员表示感谢</a>
+			<font>2020/04/26</font>
+		</li>
+		<li>
+			<span class="green">5</span>
+			<a href="">台北钱柜KTV发生火灾 死亡人数增至7人</a>
+			<font>2020/04/26</font>
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>案例</title>
+</head>
+<body>
+	<script>
+		// 1)当前商品信息
+		// 商品名 价格 库存:10
+		
+		var proname=prompt("请输入商品名");
+		var price=prompt("请输入价格");
+		var num=prompt("请输入增加的数目");
+
+		console.log(typeof(num));//string
+
+		// 把string '30' 转换成 number 30
+		num=Number(num);// 把30重新赋值给num
+
+		document.write("<ul>");
+		document.write("<li>商品名:"+proname+"</li>");
+		document.write("<li>价格:"+price+"</li>");
+		document.write("<li>库存:"+(num+10)+"</li>");
+		document.write("</ul>");
+
+	</script>
+</body>
+</html>

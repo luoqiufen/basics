@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片布局 练习</title>
+	<style>
+		.main{
+			width: 670px;
+			margin: 0 auto;
+			/* border: 1px red solid; */
+		}
+
+		/* 第一行 */
+		.main .p1{
+			width: 100px;
+			line-height: 30px;
+			font-size: 20px;
+			border-bottom: 1px solid red;
+			padding-left: 10px;
+			text-align: center;
+		}
+		
+		/* 第二行 */
+		.main .group{
+			overflow: hidden;
+		}
+
+		.main .group div{
+			width: 200px;
+			float: left;
+			margin: 0 32px 30px 0;
+			border: 1px solid #E19C9C;
+			text-align: center;
+		}
+
+		.main .group .box1{
+			border: 1px solid green
+		}
+		
+		/* 删选第三个去掉右外边框 */
+		.main .group div:nth-child(3n){
+			margin-right: 0px;
+		}
+
+		.main a{
+			color: black;
+			line-height: 40px;
+		}
+
+		/* 第三行 */
+
+		.main p{
+			text-align: center;
+		}
+
+		.main p a{
+			border: 1px solid black;
+			padding: 5px 10px;
+			color: black;
+			text-decoration: none;
+		}
+
+		.main img{
+			width: 200px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<p class="p1">风景展示：</p>
+		<div class="group">
+			<div class="box1"><img src="../pic2/1.jpg"><a href="">风景图1</a></div>
+			<div><img src="../pic2/4.jpg"><a href="">风景图2</a></div>
+			<div><img src="../pic2/3.jpg"><a href="">风景图3</a></div>
+			<div><img src="../pic2/4.jpg"><a href="">风景图4</a></div>
+			<div><img src="../pic2/1.jpg"><a href="">风景图5</a></div>
+		</div>
+		<p>
+			<a href="">上一页</a>
+			<a href="">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">下一页</a>
+		</p>
+	</div>
+		
+</body>
+</html>

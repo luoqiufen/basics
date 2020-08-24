@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择器</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	ul{
+		list-style: none;
+	} 
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	.box1 h1{
+		background: #E06161;
+	}
+
+	.box1 h2{
+		background: #61E0A4;
+	}
+
+	.box1 h3{
+		background: #7B61E0;
+	}
+
+	.box1 h1:hover+h2{
+		background: #F19048;
+
+	}
+
+
+	.box2{
+		width: 200px;
+		height: 150px;
+		border: 1px solid red;
+		margin: 0 auto;
+	}
+
+	/* 一级：缩进20px;文字加粗放大  颜色白色  背景绿色 */
+	.box2>li{
+		background: #7DEA97;
+		/* text-indent: 20px; */
+	}
+
+	.box2>li>a{
+		font-size: 18px;
+		font-weight: bold;
+		color: white;
+		margin-left: 20px;
+	}
+
+	.box2 ul{
+		background: white;
+		text-align: center;
+	}
+
+	.box2 ul a{
+		color: #333;
+	}
+
+	/* 输入框在获得焦点时，背景浅黄色 */
+	input{
+		border: 1px solid green;
+	}
+
+	/* input在火的人焦点时，自带outline样式 */
+	input:focus{
+		background: #E9F667;
+		outline: 1px solid red;
+		outline-offset: 0;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<h1>标题1</h1>
+		<h2>标题2</h2>
+		<h3>标题3</h3>
+	</div>
+
+	<ul class="box2">
+		<li><a href="">服装</a>
+			<ul>
+				<li><a href="">男装</a></li>
+				<li><a href="">女装</a></li>
+			</ul>
+		</li>
+		<li><a href="">图书</a>
+			<ul>
+				<li><a href="">科幻</a></li>
+				<li><a href="">动漫</a></li>
+			</ul>
+		</li>
+	</ul>
+	<br>
+	<br>
+	<br>
+
+	<p>用户名<input type="text"></p>
+	<p>密&nbsp;&nbsp;&nbsp;码<input type="password"></p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+day05
+一、文本修饰
+	1.text-decoration:underline;		下划线
+					  overline;			上划线
+					  line-through;		删除线
+					  none;				无
+	2.text-indent:20px/2em;
+
+	注：超链接a的颜色和线条必须在a里设置
+	.p2 a{
+		color: red;
+		text-decoration: none;
+	}
+
+二、列表修饰:ul li ol
+	1.列表符号 类型
+	list-style-type: disc/circle/square/none;
+	2.列表符号 位置
+	list-style-position: outside/inside;	指在li的外面或者里面
+	3.列表符号为 自定义图
+	list-style-image:url(图片地址)；	与符号类型只能用其一
+
+	合并写法
+	list-style: circle inside;
+	list-style: url(图片) outside;
+
+三、距离修饰
+	1.外间距
+		margin-top/bottom/left/right:10px;
+	2.内间距
+		padding-top/bottom/left/right:10px;
+	3.合并写法 
+		margin: 10px 20px 30px 40px;
+				上 	 右	  下	左
+		margin: 10px 20px 30px;
+				上   左右  下
+		margin：10px 20px;
+				上下 左右 
+		margin: 10px;
+				上下左右
+	4.左右自适应居中
+		margin-left: auto;
+		margin-right: auto; 
+
+四、css选择器
+	1.伪选择器
+		鼠标经过时
+		选择器:hover{}

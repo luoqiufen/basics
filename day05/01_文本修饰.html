@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>文本修饰</title>
+	<style>
+	.p1{
+		width: 180px;height: 100px;
+		border: 1px solid red;
+
+		font-size: 22px;
+		color: blue;
+		text-decoration: underline overline line-through;
+	}
+
+	.p2{
+		width: 300px;height: 50px;
+		border: 1px solid green;
+		/* color: red;无效 */
+		font-size: 20px;
+		font-style: italic;
+	}
+
+	.p2 a{
+		color: red;
+		text-decoration: none;
+	}
+
+	/* 鼠标经过a，变蓝色，加下划线 */
+	.p2 a:hover{
+		color: blue;
+		text-decoration: underline;
+	}
+
+	.p3{
+		width: 340px;
+		border: 1px solid blue;
+		text-indent: 2em;
+	}
+
+	.p4{
+		width: 340px;
+		border: 1px solid purple;
+		/* text-indent: 30px; */
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<p class="p1">淘宝网站</p>
+	<p class="p2">
+		<a href="">淘宝</a>
+		<a href="">百度</a>
+		<a href="">京东</a>
+		<a href="">当当</a>
+		<a href="">亚马逊</a>
+	</p>
+	<p class="p3">段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1段落文本1</p>
+	<p class="p4">段落文本2段落文本2段落文本2</p>
+</body>
+</html>

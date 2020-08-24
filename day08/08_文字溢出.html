@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文字溢出</title>
+
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.list{
+		width: 280px;
+		border: 1px solid blue;
+		line-height: 40px;
+		margin: 20px;
+		list-style: none;
+	}
+
+	/* 文字溢出，用...代替 */
+	.list li{
+		border-bottom: 1px dashed red;
+		/* 1)不换行 */
+		white-space: nowrap;
+		/* 2)隐藏多余内容 */
+		overflow: hidden;
+		/* 3)多余的文字，用省略号代替 */
+		text-overflow: ellipsis;
+	}
+
+
+
+	</style>
+
+</head>
+<body>
+	<ul class="list">
+		<li><a href="">新闻信息1，新闻信息1，新闻信息1</a></li>
+		<li><a href="">新闻信息2，新闻信息2，新闻信息2，新闻信息2，新闻信息2，新闻信息2，新闻信息2。</a></li>
+		<li><a href="">新闻信息3，新闻信息3，新闻信息3，新闻信息3，新闻信息3，新闻信息3。</a></li>
+		<li><a href="">新闻信息4，新闻信息4，新闻信息4，新闻信息4。</a></li>
+	</ul>
+</body>
+</html>

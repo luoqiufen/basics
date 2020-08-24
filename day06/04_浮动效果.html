@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动效果</title>
+	<style>
+		.bigbox{
+			width: 600px;
+			/* height: 200px;不能设置固定高 */
+			/* 需要自适应的高度 */
+			overflow: hidden;
+			border: 1px solid red;
+			margin: 0 auto;
+		}
+
+		.bigbox .leftbox{
+			width: 100px;height: 100px;
+			background: #8F8F24;
+			float: left;
+		}
+
+		.bigbox .rightbox{
+			width: 300px;height: 200px;
+			background: skyblue;
+			float: right;
+		}
+
+		.bottom{
+			width: 800px;height: 120px;
+			background: #BA80EE;
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<div class="leftbox"></div>
+		<div class="rightbox"></div>
+	</div>
+	<p class="bottom"></p>
+</body>
+</html>

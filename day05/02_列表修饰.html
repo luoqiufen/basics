@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>列表修饰</title>
+	<style>
+	/* 修饰列表1 */
+	.t1{
+		width: 220px;
+		border: 2px solid red;
+		text-align: center;
+	}
+
+	.list1{
+		border: 1px solid red;
+		width: 200px;
+		/* list-style-type: upper-alpha; */
+		list-style-position: outside;
+		list-style-image:url(../imgs/04.ico);
+	}
+
+	.list1 li{
+		border: 1px solid green;
+	}
+
+	/* 修饰列表2 */
+	.list2{
+		width: 200px;
+		border: 1px solid blue;
+		list-style:url(../imgs/07.ico) inside;
+		padding-left: 10px;
+	}
+
+	.list2 li{
+		border-bottom: 1px dashed blue;
+		line-height: 30px;
+	}
+
+	.list2 li a{
+		color: #634AF8;
+		text-decoration: none;
+	}
+
+	.list2 li a:hover{
+		color: red;
+		text-decoration: underline;
+	}
+
+	</style>
+</head>
+<body>
+	<h3 class="t1">天净沙.秋思</h3>
+	<ul class="list1">
+		<li>枯藤老树昏鸦</li>
+		<li>小桥流水人家</li>
+		<li>古道西风瘦马</li>
+		<li>夕阳西下，断肠人在天涯</li>
+	</ul>
+
+	<ol class="list2">
+		<li><a href="">枯藤老树昏鸦</a></li>
+		<li><a href="">小桥流水人家</a></li>
+		<li><a href="">古道西风瘦马</a></li>
+		<li><a href="">夕阳西下，断肠人在天涯</a></li>
+	</ol>
+</body>
+</html>

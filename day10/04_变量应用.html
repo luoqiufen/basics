@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变量应用</title>
+</head>
+<body>
+	<script>
+		// 1)声明变量
+		var uname="李白";
+		var age=20;
+
+		var province="江苏省",city="南京市";
+
+		var aa,bb;
+
+		console.log(uname);
+		console.log(age);
+		console.log(province);
+		console.log(city);
+		console.log(aa); undefined 未定义值
+		console.log(bb); undefined 
+
+		aa="apple";bb="banana";
+		console.log(aa);
+		console.log(bb);
+
+		uname="杜甫";
+		console.log(uname);
+		// 一个变量只能存一个值，新值会覆盖旧值
+		
+
+		// 1.提供 输入框：姓名，年龄，性别
+		// 显示到页面上，呈现一个列表
+		var uname=prompt("请输入用户名");
+		var age=prompt("请输入年龄");
+		var gender=prompt("请输入性别");
+
+		document.write(uname);
+		document.write("<br>",age);
+		document.write("<br>",gender);
+
+
+		document.write("<ul>");
+		document.write("<li>姓名:",uname,"</li>");
+		document.write("<li>年龄:",age,"</li>");
+		document.write("<li>性别:",gender,"</li>")
+		document.write("</ul>");
+
+	</script>
+</body>
+</html>
+

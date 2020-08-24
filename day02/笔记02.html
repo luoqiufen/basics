@@ -1,0 +1,84 @@
+day02
+一、标题和段落
+	1.标题
+		<h1>标题1</h1>
+		<h2>标题2</h2>
+		<h3>标题3</h3>
+		<h4>标题4</h4>
+		<h5>标题5</h5>
+		<h6>标题6</h6>
+	2.段落
+		<p>段落内容</p>
+	属性：
+		align="left/center/right"	水平对齐方式
+	特点：
+		1）p和hn都是自动换行
+		2）h1-h6字号逐渐表笑，都有加粗
+	注意：
+		p和hn不能相互嵌套
+		默认大小范围一致
+二、超链接
+	<a href="跳转的地址">点击的内容</a>
+	属性：
+		1.href="跳转的地址"
+		2.target="_self"	自己
+				 "_new"		新窗口(只有一个)
+				 "_blank"	空白窗口（可多个）
+		3.download="download" 下载(了解)
+	锚点链接/书签链接：
+		1.建立书签
+		<a name="page1">书签1 </a>
+		<a name="page2">书签2</a>
+		2.跳转到书签
+		<a href="#page1">跳转到书签1</a>
+		<a href="#page2">跳转到书签2</a>
+		<a href="05_锚点链接.html#page3">跳到其他页的书签位置</a>
+三、列表
+	1.无序列表
+		<ul type="disc/square/circle/none">（实心圆/矩形块状/空心圆/空白）
+			<li>内容1</li>
+			<li>内容3</li>
+			<li>内容3</li>
+			...
+		</ul>
+	2.有序列表
+		<ol type="1/a/A/i/I">（i/I：罗马数字）
+			<>内li容1</li>
+			<li>内容3</li>
+			<li>内容3</li>
+			...	
+		</ol>
+四、表格
+	<table>
+		<tr>
+			<td>列1</td>
+			<td>列2</td>
+			<td>列3</td>
+		</tr>
+		<tr>
+			<td>列1</td>
+			<td>列2</td>
+			<td>列3</td>
+		</tr>
+	</table>
+	table属性：
+		1.bgcolor="yellow" 					背景色
+		2.background="../imgs/timg.jpg"		背景图
+		3.border="1"						边框大小
+		4.bordercolor="red"					边框颜色
+		5.align="left/center/right"			水平位置
+		6.width="300" height="200"			宽 高
+		7.cellpadding="10"					单元格内间距
+		8.cellspacing="0"					单元格外间距
+	tr/td属性：
+		1.bgcolor="yellow" 					背景色
+		2.width="300"						列宽
+		  height="200"						行高
+		3.align="left/center/right"			水平位置
+		4.valign="top/middle/bottom"		垂直位置
+	补充：
+		1.th:单元格，同td；增加了加粗和居中效果
+		2.<tbody></tbody>:分组标签；可以把几行分成一个组合，整体修饰
+
+其它：快捷键
+	!(Tab补全)	生成html结构

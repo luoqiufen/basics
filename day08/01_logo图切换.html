@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>logo图切换</title>
+	<style>
+		*{
+			margin: 0;padding: 0;
+		}
+
+		.logos{
+			width: 600px;
+			height: 80px;
+			border: 1px solid red;
+		}
+
+		.logos a{
+			width: 48px;
+			height: 48px;
+			float: left;
+			margin: 10px;
+			border: 1px solid blue;
+			background: url(../pic2/logo图.png);
+		}
+
+		.logos .qq{
+			background-position: -80px 0;
+		}
+
+		.logos .wechat{
+			background-position: -160px 0;
+		}
+
+		.logos .douban{
+			background-position: -240px 0;
+		}
+
+		.logos .renren{
+			background-position: -320px 0;
+		}
+
+		/* 鼠标经过a,切换logo */
+		.logos .sina:hover{
+			background-position: 0 -80px;
+		}
+
+		.logos .qq:hover{
+			background-position: -80px -80px;
+		}
+
+		.logos .wechat:hover{
+			background-position: -160px -80px;
+		}
+
+		.logos .douban:hover{
+			background-position: -240px -80px;
+		}
+
+		.logos .renren:hover{
+			background-position: -320px -80px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="logos">
+		<a href="" class="sina"></a>
+		<a href="" class="qq"></a>
+		<a href="" class="wechat"></a>
+		<a href="" class="douban"></a>
+		<a href="" class="renren"></a>
+	</div>
+</body>
+</html>

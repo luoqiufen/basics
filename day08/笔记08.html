@@ -1,0 +1,74 @@
+day08
+一、css精灵图
+	原理：应用了background-position
+		利用一张图显示图片不同位置，实现一张图多用的效果
+		节省资源空间，提高运行加载效率
+
+	位置设置：
+		向右向下：设置正值
+		向左向上：设置负值
+
+二、css选择器
+	1.:hover
+		<style>
+			/* 鼠标经过超链接a */
+			a:hover{}
+			/* 鼠标经过li，设置子元素a的状态 */
+			li:hover a{}
+			/* 鼠标经过哥哥时，设置弟弟的状态 */
+			h1:hover+h2{}
+		</style>
+	2.父子级
+	<style>
+		/* 空格：可以隔代查找 */
+		/* 爷爷 爸爸 儿子 */
+		  ul li  a{}
+		/* 爷爷 儿子 */
+		  ul a{}
+		/* 大于号：不允许隔代查找 */
+		ul>li>a{}
+		ul>a{} 是找不到的
+	</style>
+	3. :focus
+	<style>
+		input:focus{}
+	</style>
+
+三、div布局
+	1.图文混排案例
+		1）图片和文字默认是底部对齐
+			通过float可以顶部对齐
+	2.溢出的文字用省略号代替
+		/* 1)不换行 */
+		white-space: nowrap;
+		/* 2)隐藏多余内容 */
+		overflow: hidden;
+		/* 3)多余的文字，用省略号代替 */
+		text-overflow: ellipsis;
+
+四、border和outline
+	1.border 边框
+		border: 1px solid red;
+		border: 1px solid transparent;
+							透明色
+	2.outline 轮廓
+		outline: 1px solid red;
+
+		outline-offset:5px; 向外偏移
+					   -5px; 向内偏移
+	区别：
+		1）border	占位置	outline	不占位置
+		2）border	有边框	outline	无边框
+
+	拓展案例：利用border制作三角形
+	<style>
+		.box1{
+			width:0px;
+			height:0px;
+			border-top:20px solid red;
+			border-bottom:20px solid transparent;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+		}
+	</style>
+

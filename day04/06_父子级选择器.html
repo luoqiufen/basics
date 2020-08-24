@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>父子级选择器</title>
+	<style>
+	/* ul */
+	.list1{
+		width: 200px;
+		border:1px solid blue;
+	}
+	.list1 li{
+		border-bottom: 1px dashed red;
+	}
+	/* ol */
+	.list2{
+		width: 200px;
+		border:2px dashed red;
+	}
+	.list2 li{border-bottom: 1px solid orange;
+	}
+	/* 菜单列表 */
+	.list3{
+		width: 300px;
+		border:1px solid green;
+	}
+	/* 给所有的二级分类添加虚线下边框 */
+	.list3 li ul li{border-bottom: 1px dashed blue;}
+
+	</style>
+</head>
+<body>
+	<ul class="list1">
+		<li>第一行</li>
+		<li>第二行</li>
+		<li>第三行</li>
+	</ul>
+
+	<ol class="list2">
+		<li>第一行</li>
+		<li>第二行</li>
+		<li>第三行</li>
+	</ol>
+
+	<h3>菜单列表</h3>
+	<ul class="list3">
+		<li>服装
+			<ul>
+				<li>男装</li>
+				<li>女装</li>
+			</ul>
+		</li>
+		<li>图书
+			<ul>
+				<li>漫画</li>
+				<li>科幻</li>
+			</ul>
+		</li>
+		<li>电器
+			<ul>
+				<li>洗衣机</li>
+				<li>扫地机器人</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>

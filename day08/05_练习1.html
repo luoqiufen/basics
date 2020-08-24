@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习1</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.box{
+		border: 1px solid red;
+		width: 820px;
+		margin: 50px auto;
+		text-align: center;
+	}
+
+	.box img{
+		width: 180px;
+		height: 110px;
+		margin: 6px;
+		border-top: 3px solid transparent;
+	}
+
+	/* 鼠标经过图片,设置内边框 */
+	.box img:hover{
+		outline: 3px solid skyblue;
+		outline-offset:-5px;
+	}
+
+	/* 鼠标经过图片,设置外边边框  */
+	.box img:hover{
+		border-top: 3px solid red;
+	}
+
+	</style>
+</head>
+<body>
+<!-- 鼠标经过图片,加内边框3px -->
+	<div class="box">
+		<img src="../pic2/1.jpg">
+		<img src="../pic2/2.png">
+		<img src="../pic2/3.jpg">
+		<img src="../pic2/4.jpg">
+	</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>单击效果</title>
+	<style type="text/css">
+		.box1{
+			margin: 0 auto;
+			width: 100px;
+			height: 100px;
+			border: 1px solid red;
+			line-height: 100px;
+			text-align: center;
+		}
+		ol{
+			list-style: 1 inside;
+		}
+		li{
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1" id="box1" onclick="aa()"></div>
+
+	<script type="text/javascript">
+		// 
+		function aa() {
+			// box.innerHTML = "已单击";
+			box1.style.background = "url(../pic2/1.jpg) no-repeat";
+			box1.style.backgroundSize = "100px 100px";
+		}
+	</script>
+
+	<p>
+		背景颜色：<input type="text" id="bgcolor" value="pink" /><br><br>
+		行数：<input type="text" id="rownum" value="10" /><br><br>
+		列表：
+				<input type="radio" name="list" value="1" id="danxuan1" />无序
+				<input type="radio" name="list" value="2" id="danxuan2" />有序<br><br>
+		<input type="button" value="创建" onclick="danji()" />
+	</p>
+	<div id="box2"></div>
+	<script type="text/javascript">
+		function danji() {
+			console.log(bgcolor.value);
+			console.log(rownum.value);
+			var group = document.getElementsByName("list");
+			console.log(group);
+			// console.log(group.value);
+		}
+		/*function danji() {
+			var str = "";
+			if(danxuan1.checked) {
+				str = "<ul style='background-color:"+bgcolor.value+"'>",
+				for(var i=1; i<=rownum.value; i++) {
+					str = str + "<li>第"+i+"行</li>"
+				}
+				str = str + "</ul>"
+			} else if(danxuan2.checked) {
+				str = "<ol style='background-color:"+bgcolor.value+"'>"
+				for(var i=1; i<=rownum.value; i++) {
+					str = str + "<li>第"+i+"行</li>"
+				}
+				str = str + "</ol>"
+			} else {
+				console.log("请选择有序或者无序");
+			}
+			box2.innerHTML = str;
+		}*/
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符串和数值</title>
+</head>
+<body>
+	<script>
+	// 1)声明变量：标题 阅读数 发布时间
+	var title="JS语言的语法结构";
+	var num=100;
+	var time="2020/04/28";
+
+	console.log(title);
+	console.log(num);
+	console.log(time);
+
+	// 检验变量类型
+	// typeof(变量/值)
+	console.log(typeof(title)); //string
+	console.log(typeof(num)); //number
+	console.log(typeof(time)); //string
+
+	console.log(typeof(-20)); //number
+	console.log(typeof("20")); //string
+
+	// 1)加法 +
+	// 数值相加，字符相连
+	console.log(15+20); //35		加法运算
+	console.log('15'+20); //1520	连接运算
+
+	var str1="web1211";
+	var str2=20;
+	var str3="apple";
+
+	var str4="班级:"+str1+"年龄:"+str2+"姓名"+str3;
+
+	console.log(str4);
+
+	console.log("班级:"+str1+"年龄:"+str2+"姓名"+str3);
+	console.log("班级:",str1,"年龄:",str2,"姓名",str3);
+
+	// 2)减法 -
+	console.log(30-5); //2500000
+	console.log(30-"5"); //25
+	// 先去做类型转换 "5"—>5
+	
+	console.log(30-"a5"); //NaN:Not a number
+
+	// 3)乘法 *
+	console.log(5*8); //40
+	console.log('5'*8); //40
+	console.log('a5'*8); //NaN:Not a number
+
+	// 4)除法 /
+	console.log(25/5); //5
+	console.log('25'/5); //5
+	console.log('a25'/5); //NaN:Not a number
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 250px;
+			height: 160px;
+			border: 1px solid red;
+			line-height: 40px;
+			text-indent: 100px;
+			list-style: none;
+		}
+
+		.box a{
+			color: black;
+			text-decoration: none;
+		}
+
+		.box li{
+			border-bottom: 1px dashed red;
+		}
+
+		.box li:last-child{
+			border-bottom: 0;
+		}
+
+		.box .li1{
+			background: url(../imgs/04.ico) no-repeat 40px center;
+			background-size: 25px;
+		}
+
+
+		.box .li2{
+			background: url(../imgs/06.ico) no-repeat 40px center;
+			background-size: 25px;
+		}
+
+		.box .li3{
+			background: url(../imgs/07.ico) no-repeat 40px center;
+			background-size: 25px;
+		}
+
+		.box .li4{
+			background: url(../imgs/08.png) no-repeat 40px center;
+			background-size: 25px;
+		}
+
+		/* 鼠标经过每一行，图右移 文字变 红色+下划线 */
+		.box li:hover{
+			background-position: 60px center;	
+		}
+
+		.box li:hover a{
+			text-decoration: underline;
+			color: red;
+		}
+
+
+	</style>
+</head>
+<body>
+	<ul class="box">
+		<li class="li1"><a href="">新浪</a></li>
+		<li class="li2"><a href="">腾讯空间</a></li>
+		<li class="li3"><a href="">网易</a></li>
+		<li class="li4"><a href="">淘宝</a></li>
+	</ul>
+</body>
+</html>

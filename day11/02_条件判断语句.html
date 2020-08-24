@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>条件判断语句</title>
+</head>
+<body>
+	<script>
+		// 条件判断语句
+		if(true){ // true走这
+			// 自定义js程序
+			console.log('aa');
+		}else{ // false走这
+			console.log('bb');
+		}
+
+		// 条件 判断年龄是否>=18
+		var age=15;
+		if(age>=18){ // true的结果
+			document.write("<font color='green'>已成年，可以进网吧了！</font>")
+		}else{ // false的结果
+			document.write("<font color='red'>未成年，禁止上网！</font>")
+		}
+
+		// 需求：请弹出输入框，指定列表类型：无序/有序
+		// 3行列表
+		var list=prompt("请指定类型:无序/有序")
+		if(list=="无序"){
+			document.write("<ul>");
+			document.write("<li>服装</li>");
+			document.write("<li>图书</li>");
+			document.write("<li>食品</li>");
+			document.write("</ul>");
+		}else{
+			document.write("<ol>");
+			document.write("<li>服装</li>");
+			document.write("<li>图书</li>");
+			document.write("<li>食品</li>");
+			document.write("</ol>");
+		}
+
+	</script>
+</body>
+</html>

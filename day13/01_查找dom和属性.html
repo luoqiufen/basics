@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>查找dom和属性</title>
+</head>
+<body>
+	<p id="p1" align="center">段落1</p>
+	<h1 id="title">标题1</h1>
+	<div id="box1">
+		盒子1
+		<ul>
+			<li>第一行</li>
+			<li>第二行</li>
+		</ul>
+	</div>
+
+	<script>
+	// 提前执行：var p1 title box1;
+		// 1.查找标签元素
+		console.log(p1);
+		console.log(title);
+		console.log(box1);
+
+		// 2.操作 属性
+		console.log(p1.align);//center
+		p1.align="right";
+
+		console.log(title.align);
+		title.align="center";
+
+		// 可以操作dom没有的属性，但是无效
+		console.log(title.width);
+		title.width=300;
+		console.log(title.width); 
+
+		// 3.操作标签里的内容
+		// 标签元素.innerHTML
+		// 标签元素.innerText
+		console.log(p1.innerHTML);
+		console.log(title.innerHTML);
+		console.log(box1.innerHTML);
+
+		console.log(box1.innerText);
+
+		// 修改
+		p1.innerHTML='<a href="">百度</a>';
+		title.innerText='<a href="">淘宝</a>';
+
+		// 往div里放一个有序列表
+
+		box1.innerHTML='<ol><li>第1行</li><li>第2行</li><li>第3行</li><li>第4行</li></ol>';
+
+		// 1)组合ol
+		var str="<ol>";
+			str=str+'<li>第1行</li>';
+			str=str+'<li>第2行</li>';
+			str=str+'<li>第3行</li>';
+			str=str+'<li>第4行</li>';
+			str=str+'</ol>';
+
+			console.log(str);
+		// 把ol放到div盒子里
+		box1.innerHTML=str;
+
+
+		// 在盒子里显示10行的有序列表
+		var str='<ol>';
+
+		for(var i=1;i<=10;i++){
+			str=str+'<li>第'+i+'行</li>'
+		};
+
+		var str=str+'</ol>';
+
+		console.log(str);
+		
+		box1.innerHTML=str;
+
+	</script>
+</body>
+</html>

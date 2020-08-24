@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动布局 练习</title>
+	<style>
+		.bigbox{
+			width: 600px;
+			overflow: hidden;
+			margin: 0 auto;
+			}
+
+			.bigbox .box{
+				background: #506AC9;
+				overflow: hidden;
+				line-height: 30px;
+			}
+
+			.bigbox .box .box1{
+				color: white;	
+				float: left;
+				margin-left: 10px;
+				font-size: 20px;
+			}
+
+			.bigbox .box .box2{
+				float: right;
+				margin-right: 10px;
+				font-size: 20px;
+			}
+
+			.bigbox .box .a1{color: white;}
+
+			.list{
+				list-style: square inside;
+				line-height: 30px;
+				padding: 0 10px; 
+				margin: 0;
+				font-size: 18px;
+				border: 1px solid #506AC9;
+			}
+
+			.list a{
+				color: black;
+				text-decoration: none;
+			}
+
+			.list li{border-bottom: 2px dashed #506AC9;}
+
+			.list .l1{border-bottom: 0;}
+
+			.p1{text-align: center;}
+
+			/* 找第一个a */
+			.bigbox .p1 a:first-child{
+				text-decoration: none;
+				color: black;
+				margin: 0 10px;
+			}
+
+			.bigbox .p1 .a2{color: black;}
+
+
+	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<div class="box">
+			<div class="box1">国际新闻</div>
+			<div class="box2"><a href="" class="a1">更多>></a></div>
+		</div>
+		<ul class="list">
+			<li><a href="">新闻信息1新闻信息1新闻信息1新闻信息1</a></li>
+			<li><a href="">新闻信息2新闻信息2新闻信息2新闻信息2新闻信息2</a></li>
+			<li><a href="">新闻信息3新闻信息3新闻信息3新闻信息3</a></li>
+			<li><a href="">新闻信息4新闻信息4新闻信息4</a></li>
+			<li><a href="">新闻信息5新闻信息5新闻信息5新闻信息5</a></li>
+			<li class="l1"><a href="">新闻信息6新闻信息6新闻信息6新闻信息6</a></li>
+		</ul>
+		<p class="p1">
+			<a href="">上一页</a> 
+			<a href="" class="a2">下一页</a>
+		</p>
+	</div>
+	
+</body>
+</html>

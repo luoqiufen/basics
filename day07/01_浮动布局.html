@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动布局</title>
+	<style>
+	.bigbox{
+		width: 800px;
+		/* height: 600px; */
+		border: 2px solid red;
+		margin: 0 auto;
+	}
+
+	.bigbox .box1{
+		width: 200px;
+		height: 100px;
+		background: skyblue;
+		float: left;
+	}
+
+	.bigbox .box2{
+		width: 300px;
+		height: 200px;
+		background: #AA6D6D;
+		float: right;
+	}
+	
+	/* box3不浮动，占位置，父元素只能依靠它 */
+	/* box3向上移：box1/2浮动，对它产生影响 */
+	.bigbox .box3{
+		width: 600px;
+		height: 200px;
+		background: #4AB874;
+		clear: both;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="bigbox">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>条件判断语句2</title>
+</head>
+<body>
+	<script>
+		// 语法：
+		if(false){
+			console.log('判断正确');
+		}
+
+		// 案例1
+		// 把15转换成boolean类型的true
+		if(15){
+			console.log('ok');
+		}else{
+			console.log('no');
+		}
+
+		// 把-20转换成boolean类型的true
+		if(-20){
+			console.log('ok');
+		}else{
+			console.log('no');
+		}
+
+		// 把0转换成boolean类型的true
+		if(0){
+			console.log('ok');
+		}else{
+			console.log('no');
+		}
+		// 结论:0-->false  非0数值-->true
+		
+
+		// 案例1
+		console.log('-----------------')
+
+		// 'aa'-->true
+		if('aa'){
+			console.log('ok');
+		}else{
+			console.log('no');
+		}
+
+		// '0'-->true
+		if('0'){
+			console.log('ok');
+		}else{
+			console.log('no');
+		}
+
+		// ''空字符串-->false
+		if(''){
+			console.log('ok');
+		}else{
+			console.log('no');
+		}
+		// 结论：''空字符串-->false
+		
+		// 数值0-->false
+		// 空字符串-->false
+		
+		var name='aa';
+		if(name=''){
+			console.log('对');
+		}else{
+			console.log('错');
+		} // 错
+
+		var num='10';
+		if(num-10){
+			console.log('ok');
+		}else{
+			console.log('no');
+		} // no
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>调试代码</title>
+</head>
+<body>
+	<script>
+		// 从1开始 到5结束
+		for(var i=1;i<=5;i++){
+			document.write(i+'<br>')
+		}
+
+		// for执行过程：
+		// var i=1;i<=5;输出1
+		// i++;(2) i<=5;输出2
+		// i++;(3) i<=5;输出3
+		// i++;(4) i<=5;输出4
+		// i++;(5) i<=5;输出5
+		// i++;(6) i<=5;跳出for循环，结束
+		
+
+		// 需求：展示10行的无序列表，内容：第n行
+		document.write("<ul>");
+		for(var k=1;k<=10;k++){
+			document.write("<li>第"+k+"行</li>");	
+		}
+		document.write("</ul>");
+		
+
+	</script>
+</body>
+</html>

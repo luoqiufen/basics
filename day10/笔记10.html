@@ -1,0 +1,67 @@
+day10
+一、Javascript语言
+	完成用户和页面的交互
+	页面生动一些
+
+二、JS语言语法
+	1.写在哪？
+		1）直接在浏览器里写（仅供测试）
+		2）写在script标签里
+		3）写在标签的"特定"属性里
+	2.如何显示内容/输出内容？
+		1）弹出一个窗口
+			alert("显示内容");
+		2）输出内容到body页面里
+			document.write("内容");
+		3）输出到console面板里
+			console.log("内容");
+	3.变量
+		存取数据
+		定义一次，多次使用
+		<script>
+		// 1)定义变量 var 变量名=值;
+			var uname="apple";
+
+		// 2)使用变量：变量名
+			document.write(uname);
+			console.log(uname);
+		</script>
+三、变量的类型
+	1.字符串类型:string
+	<script>
+		// "字符串内容" 
+		// '字符串内容'
+		var title="新闻标题";
+
+	</script>
+	2.数值类型:number
+	可以运算 + - * /
+	<script>
+		// 10  -20   3.14
+		var num=100;
+
+	</script>
+
+	运算符：
+	1) +
+	<script>
+		// 数值相加，字符相连
+		console.log(10+5);//15
+		console.log(10+'5');//105
+		var str1='abcd'
+		var str2="姓名:"+str1
+	</script>
+
+	2) -
+	<script>
+	console.log(30-5); //25
+	console.log(30-"5"); //25
+	console.log(30-"a5"); //NaN:Not a number
+	</script>
+
+	类型转换
+	<script>
+		Number('15'); // 15
+		Number('abc20'); // NaN
+		String('15'); //'15'
+	</script>

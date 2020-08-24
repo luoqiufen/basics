@@ -1,0 +1,212 @@
+复习
+一、html
+	1.不换行
+		a,span,img,font,s,i,b,u,input,label
+
+	2.换行
+		br,p,div,h1-h6,ul,ol,li,table,form
+
+	3.a超链接
+		<a href="url地址" target="_self/_blank/_new" title="鼠标悬停描述文字"></a>
+
+		下载文件：
+		<a href="文件地址" download>下载</a>
+		锚点链接：
+			1）建立书签(起名)	<a name="书签名">第20页</a>
+			2）跳到书签位置		<a href="#书签名">跳转到20页</a>
+		  跨页面跳转：
+		 	<a href="页面地址#书签名">跳到其他页面地址</a>
+
+	4.图片
+		<img src="图地址" alt="图片出错时描述文字" title="悬停描述文字" width="宽" height="高">
+		路径形式：从当前文件位置出发(相对路径)
+			images/01.png
+			./images/01.png 	./	当前路径
+			../images/01.png 	../	上一级0
+
+	5.表单
+		<form action="动态页面地址" method="get/post"> 
+			用户名: <input type="text" name="uname" value="apple">
+			密码: <input type="password" name="upass">
+			性别：<input type="radio" name="gender" value="男">男
+				  <input type="radio" name="gender" value="女">女
+			爱好: <input type="checkbox" name="hobby" value="1">学习
+				  <input type="checkbox" name="hobby" value="2">游戏
+				  <input type="checkbox" name="hobby" value="3">听音乐
+				  <input type="checkbox" name="hobby" value="4">睡觉
+			提交：<input type="text" value="登录">
+		</form>
+
+		get提交格式：
+			url?uname=apple&upass=123&gender=男&hobby=1&hobby=2
+		--------------------------------------------------------------------
+		属性：
+			1)maxlength="10"		限制输入的最大字符数
+			2)readonly="readonly"	只读
+			3)checked="checked"		默认选中状态：单选/复选
+
+	6.表格
+		<table>
+			<tr>
+				<td>1-1</td>
+				<td>1-2</td>
+			</tr>
+		</table>
+
+	7.列表
+	 无序：
+		<ul type="disc/circle/square/none">
+			<li>第一行</li>
+			<li>第二行</li>
+			<li>第三行</li>
+		</ul>
+		<ol type="1/A/a/i/I">
+			<li>第一行</li>
+			<li>第二行</li>
+			<li>第三行</li>
+		</ol>
+
+二、css
+	1.边框
+		border:1px solid red;
+		border-top/bottom/left/right:1px solid red;
+
+		outline:1px solid red;
+		outline-offset:2px/-2px;
+
+		input{
+			border:0;
+			outline:0;
+		}
+
+	2.背景
+		background:red/#ff0000;
+		background:url() no-repeat right bottom;
+		
+		background-position:水平位置 垂直位置;
+		水平位置:left/center/right;
+		垂直位置:top/center/bottom;
+
+		数值大小：
+			左上给负值，右下给正值。
+
+	3.文本修饰
+		font-size:16px;
+		font-family:宋体;
+		color:red;
+
+		font-weight:bold/normal;
+		font-style:italic/normal;
+
+		text-decoration:underline;
+						overline;		上划线
+						line-through;	删除线
+						none;
+
+		text-align:left/center/right;
+		line-height:20px;
+		text-indent:2em;
+
+	4.列表
+		list-style:disc inside;
+		list-style:url(图片地址) inside;
+
+	5.浮动布局
+		float:left;
+		float:right;
+
+		clear:left/right/both;
+
+		overflow:hidden; 自适应高度(给高度为0的父级)
+
+	6.距离
+		margin:10px 20px 30px 40px;
+		margin:10px 20px 30px;
+		padding:10px 20px;
+		padding:10px;
+
+		margin:0 auto;
+
+三、js
+	1.输出语句
+		alert('弹框内容');
+		console.log('显示到console控制台');
+		document.write('显示在body页面里');
+
+		prompt('请输入内容')
+
+	2.变量的数据类型
+		变量：存取数据
+		- 声明变量
+		  var 变量名; 放一个储物柜
+		- 给变量赋值
+		  变量名=值;
+
+		  var 变量名1=值1,变量名2=值2;
+
+		- 取值
+		  alert(变量名);把值从储物柜里取出来
+
+		数据类型：
+		  1)string 字符串
+		  <script>
+		  	var str1='abc';
+		  	var str2='123';
+		  	var dtr3='<div style="width:200px;height:100px;border:1px solid red"></div>';
+		  </script>
+
+		  2)number 数值
+		  <script>
+		   var num1=10;
+		   var num2=10.23;
+		   var num3=123;
+		  </script>
+
+		  +:数值相加，字符相连
+		  <script>
+		  	console.log('150'+10); //'15010'
+		  	console.log(120+10); //130
+		  	console.log('10ab'+15); //'10ab15'
+		  </script>
+
+		   <script>
+		  	console.log('20'-10); //10
+		  	console.log(20-10); //10
+		  	console.log('20ab'-10); //NaN
+		  </script>
+
+		3)boolean类型：判断的结果	true false
+		  <script>
+			console.log('15'+1<120); //151<120 false
+			console.log(12<8+3); //12<11 false
+		  </script>
+
+		  数值0，空字符串''-->false
+		  <script>
+			string();
+			Number();
+			boolean();
+		  </script>
+
+	3.流程语句	if-else条件判断语句
+	 <script>
+	 	var uage=prompt('请输入您的年龄')
+		console.log(uage);
+		if(uage>=18){ //true的执行结果
+			console.log('已成年')
+		}else{ //false的执行结果
+			console.log('未成年')
+		}
+
+	 </script>
+
+	4.流程语句 - for循环语句
+	  <script>
+		for(var i=0;i<=5;i++){
+			document.write(i+'<br>')
+		}
+
+	  </script>
+
+四、js-dom
+	

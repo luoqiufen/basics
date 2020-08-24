@@ -1,0 +1,56 @@
+day13
+一、JS-dom
+	1.根据id名 找到标签元素
+		<div id="box1"></div>
+		<script>
+			console.log(box1);
+		</script>
+
+	2.操作标签元素的属性
+		<script>
+			// 标签元素.属性名
+			console.log(box1.id)
+
+		</script>
+
+	3.操作标签元素的内容
+		<script>
+			// 标签元素.innerHTML --识别标签
+			// 标签元素.innerText --只识别文字
+			
+			// 获取
+			console.log(box1.innerHTML);
+			// 修改内容
+			box1.innerHTML="<a href=>淘宝</a>";
+			// 添加内容
+			box1.innerHTML=box1.innerHTML+"<a href=>淘宝</a>";
+
+		</script>
+
+	4.表单控件元素
+	  - 获取控件的值
+		表单控件.value
+		<input type="text" name="uname" id="input1">
+
+		<script>
+			console.log(input1.value);
+		</script>
+		
+	  - 获取焦点触发的属性：onfocus
+	  - 失去焦点触发的属性：onblur
+	  - 单击时触发的属性：onclick
+
+		<input type="text" onfocus="aa()" onblur="bb()">
+
+		<script>
+			// 获取焦点时做的事情
+			function aa(){
+				console.log("获取焦点")
+			}
+
+			// 失去焦点时做的事情
+			function bb(){
+				console.log("失去焦点")
+			}
+		</script>
+		

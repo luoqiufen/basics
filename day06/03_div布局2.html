@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div布局2</title>
+	<style>
+		.bigbox1{
+			width: 1000px;height: 150px;
+			border: 2px solid red;
+			margin: 20px auto;
+		}
+
+		.bigbox1 .logo{
+			width: 120px;height: 100px;
+			background: skyblue;
+			float: left;
+			margin: 25px;
+		}
+
+		.bigbox1 .group{
+			float: right;
+		}
+
+		.bigbox1 .boxes{
+			width: 120px;height: 60px;
+			background: green;
+			float: left;
+			margin: 65px 20px 25px;
+		}
+
+		/* 盒子二 */
+		.bigbox2{
+			width: 1000px;height: 320px;
+			border: 1px solid red;
+			margin: 20px auto;
+		}
+
+		.bigbox2 .boxes{
+			width: 100px;height: 80px;
+			background: #79C679;
+			margin: 20px;
+		}
+
+		.bigbox2 .logo{
+			width: 800px;height: 280px;
+			background: skyblue;
+			float: right;
+			margin: 20px 40px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="bigbox1">
+		<div class="logo">logo</div>
+		<div class="group">
+			<div class="boxes box1">1</div>
+			<div class="boxes box2">2</div>
+			<div class="boxes box3">3</div>
+		</div>
+	</div>
+	<div class="bigbox2">
+		<div class="logo">logo</div>
+		<div class="boxes">1</div>
+		<div class="boxes">2</div>
+		<div class="boxes">3</div>
+	</div>
+</body>
+</html>

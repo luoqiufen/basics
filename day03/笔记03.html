@@ -1,0 +1,85 @@
+day03
+一、表格里的合并
+	单元格合并:td/th
+		1.colspan="个数"	列合并
+		2.rowspan="个数"	行合并
+
+	步骤:
+		1.从开始位置合并
+		2.被合并的单元格要删除
+二、表单
+	作用:手机用户信息
+	form标签
+		<form action="">
+			收集信息<!-- (提供了一些表单控件) -->
+		</form>
+		属性:
+			1.action="index.php"	数据提交的动态页面地址
+
+	表单控件
+		1.单行文本输入框	<input type="text">
+		2.密码框			<input type="password">
+		3.提交按钮			<input type="submit"> 
+		4.单选按钮			<input type="radio">
+		5.多选按钮/复选框	<input type="checkbox">
+
+		一组单选按钮/复选框:name名一致,value值不同
+
+		属性:
+			1.maxlength="10"		限制用户输入的最大字符
+			2.name="自定义"			控件要提交信息,必须有name
+			3.value="默认值"
+			
+			label标签:扩展选择的范围
+			<label for="控件的id名">任何内容</label>
+
+			其它辅助标签(了解)
+			<fieldset>
+				<legend>
+					标题文字
+				</legend>
+			</fieldset>
+
+三、div和span
+	1. <div></div>大盒子
+	2. <span></span>小盒子
+
+	特征:
+		1)div是自动换行的,span不换行
+		2)div可以嵌套任何内容,使用灵活,不受限制
+		3)span主要嵌套文字或图片
+
+四、框架标签（了解）
+	框架:可以把多个页面集中到一起
+	1.页面内框架
+		<iframe src="页面地址" frameborder="0"></iframe>
+
+		属性:
+			1)frameborder="0/1"		边框无/有
+			2)width="200" height="200"				
+			3)scrolling="auto/no"	滚动条效果:自动/无
+
+	2.页面外框架
+		首先删除body
+		其次是划分结构
+
+		frameset	是划分框架的
+			cols="100,200"			列划分="列宽1,列宽2"
+			rows="100,200,300"		行划分="行高1,行高2,行高3"
+			frameborder="0/1"		边框无/有
+			border="1"				边框大小
+			bordercolor="red"		边框颜色
+
+			注:cols和rows不能同时使用
+
+		frame		是链接引入界面的
+			src="引入页面地址"
+			name="框架名"
+			noresize 	不允许重置大小
+
+		<frameset>
+			<frame>		
+		</frameset>
+
+		如果有a 超链接跳转
+		target="框架名"
